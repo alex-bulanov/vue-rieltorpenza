@@ -33,6 +33,7 @@
           <use xlink:href="#icon-caret-right"></use>
         </svg>
       </div>
+      <div class="modal-gallery__pagination swiper-pagination"></div>
     </div>
     <!-- thumbs -->
     <div class="modal-gallery__thumbs-container swiper-container">
@@ -78,6 +79,10 @@ export default {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".modal-gallery__pagination",
+          type: "fraction",
         },
         thumbs: {
           swiper: this.swiperThumbs,

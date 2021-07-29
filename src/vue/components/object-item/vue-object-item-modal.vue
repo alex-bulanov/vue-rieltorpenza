@@ -13,14 +13,14 @@
           <div class="modal__header-contnent">
             <p class="modal__header-title h5">{{ object.title }}</p>
             <p class="modal__header-price h6">
-              {{ object.price }}
+              {{ object.price | priceSeparator }} ₽
             </p>
             <p class="modal__header-address c1">
               {{ object.city }}, {{ object.location }}, {{ object.street }} ул,
               {{ object.building }}
             </p>
             <p class="modal__header-price-per-meter c1">
-              {{ object.pricePerMeter }} ₽/м²
+              {{ object.pricePerMeter | priceSeparator }} ₽/м²
             </p>
           </div>
           <div class="modal__buttons">
@@ -78,6 +78,7 @@
 
 <script>
 import VueObjectItemMap from "./vue-object-item-map.vue";
+import priceSeparator from "../..//filters/priceSeparator";
 import VueObjectItemModalGallery from "./vue-object-item-modal-gallery.vue";
 
 export default {
@@ -106,7 +107,9 @@ export default {
       },
     },
   },
-  filters: {},
+  filters: {
+    priceSeparator,
+  },
   computed: {},
   methods: {
     onCloseButton() {
