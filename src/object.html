@@ -1,92 +1,70 @@
 ${require('./common.blocks/page-cover/page-head.html')}
 
-<!-- vue компонент принимает объект с данными для отрисовки страницы объекта -->
-<!-- пример объекта с данными -->
-<!-- 
-
-{
-  id: "1",
-  title: "1-комн. квартира, 25,47 м²",
-  code: "4309540",
-
-  mortgage: {
-    discount:  "0.3",
-    perMonth: "11296",
-  },
-
-  coordinates: [53.213060, 45.061406],
-  city: "Пенза",
-  location: "Первомайский р-н",
-  street: "Красная ул, 49",
-  category: "1-комн. квартира",
-  isFav: false,
-  posted: "16.06.2021",
-  views: "85",
-  price: "2990000",
-  priceOld: "3950000",
-  pricePerMeter: "37374",
-  totalArea: "25,47",
-  livingArea: "18",
-  kitchenArea: "12.7",
-  floor: "8/10",
-  houseType: "Кирпич",
-
-  images: [
-    {src: "${require("./common.blocks/object/images/img-1.jpg")}", alt: "Кухня"}, 
-    {src: "${require("./common.blocks/object/images/img-2.jpg")}", alt: "Спальня"},
-    {src: "${require("./common.blocks/object/images/img-3.jpg")}", alt: "Кухня"},
-    {src: "${require("./common.blocks/object/images/img-4.jpg")}", alt: "Ванная"},
-    {src: "${require("./common.blocks/object/images/img-5.jpg")}", alt: "Ванная"},
-    {src: "${require("./common.blocks/object/images/img-1.jpg")}", alt: "Кухня"}, 
-    {src: "${require("./common.blocks/object/images/img-2.jpg")}", alt: "Спальня"},
-    {src: "${require("./common.blocks/object/images/img-3.jpg")}", alt: "Кухня"},
-    {src: "${require("./common.blocks/object/images/img-4.jpg")}", alt: "Ванная"},
-    {src: "${require("./common.blocks/object/images/img-5.jpg")}", alt: "Ванная"},
-  ],
-   
-  summary: [
-    {"Общая площад": "48.7 м²"},
-    {"Жилая площадь": "18 м²"},
-    {"Кухня": "12.7 м²"},
-    {"Этаж": "8/10"},
-    {"Тип дома": "Кирпич"},
-  ],
-
-  characteristics: [
-    {"Кол-во комнат":  "2"},
-    {"Общая площад": "48.7 м²"},
-    {"Высота потолков": "2.6 м"},
-    {"Ремонт": "Современный"},
-    {"Санузел": "Раздельный"},
-    {"Балкон": "Есть"},
-    {"Материал окон": "Пластиковые"},
-    {"Солнечная сторона": "Часть окон"},
-    {"Вид из окон": "Во двор"},
-    {"Счётчик воды": "Есть"},
-    {"Железная дверь": "Есть"},
-    {"Подключённые сервисы": "Телефон, интернет, кабельное телевидение"},
-    {"Домофон": "Есть"},
-  ],
-}
-
--->
-
-<!-- 
-
-  Хлебные крошки
-  
- -->
-
-<section class="object">
+<section class="object-item">
   <div class="container">
 
-
-
+    <vue-object-item :item='{
+      id: "1",
+      title: "1-комн. квартира, 25,47 м²",
+      code: "4309540",
+      mortgage: {
+        discount:  "0.3",
+        perMonth: "11296",
+      },
+      totalArea: {desc: "Общая площадь", value: "25,47"},
+      livingArea: {desc: "Жилая площадь", value: "18"},
+      kitchenArea: {desc: "Кухня", value: "12.7"},
+      floor: {desc: "Этаж", value: "8/10"},
+      houseType: {desc: "Тип дома", value: "Кирпич"},
+      coordinates: [53.213060, 45.061406],
+      city: "Пенза",
+      location: "Первомайский р-н",
+      street: "Красная ул, 49",
+      category: "1-комн. квартира",
+      isFav: false,
+      posted: "16.06.2021",
+      views: "85",
+      price: "2990000",
+      priceOld: "3950000",
+      pricePerMeter: "37374",
+      images: [
+        {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+        {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+        {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+        {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+        {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+        {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+        {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+        {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+        {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+        {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+      ],
+      summary: [
+        {"Общая площад": "48.7 м²"},
+        {"Жилая площадь": "18 м²"},
+        {"Кухня": "12.7 м²"},
+        {"Этаж": "8/10"},
+        {"Тип дома": "Кирпич"},
+      ],
+      characteristics: [
+        {"Кол-во комнат":  "2"},
+        {"Общая площад": "48.7 м²"},
+        {"Высота потолков": "2.6 м"},
+        {"Ремонт": "Современный"},
+        {"Санузел": "Раздельный"},
+        {"Балкон": "Есть"},
+        {"Материал окон": "Пластиковые"},
+        {"Солнечная сторона": "Часть окон"},
+        {"Вид из окон": "Во двор"},
+        {"Счётчик воды": "Есть"},
+        {"Железная дверь": "Есть"},
+        {"Подключённые сервисы": "Телефон, интернет, кабельное телевидение"},
+        {"Домофон": "Есть"},
+      ],
+    }'></vue-object-item>
   </div>
 </section>
 
-<!-- секция похожих объектов -->
-<!-- секция консультируем -->
 
 
 ${require('./common.blocks/page-cover/page-foot.html')}

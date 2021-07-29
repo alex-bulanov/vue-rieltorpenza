@@ -1,0 +1,56 @@
+@import (reference) '../../less/variables.less';
+
+.object-item {
+
+  &__wrapper {
+    @media screen and (min-width: @desktop) {
+      display: grid;
+      grid-template-columns: 62% auto;
+      gap: 30px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+
+    @media screen and (min-width: @desktop) {
+      padding: 16px 0 40px;
+    }
+  }
+
+  &__header-container {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: @desktop) {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: @desktop) {
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
+  }
+
+  &__mortgage-discount {
+    border-radius: 100px;
+    padding: 4px 8px;
+    color: @color-primary-dark;
+    background-color: @color-primary-lightest;
+
+    @media screen and (min-width: @desktop) {
+      padding: 10px 12px;
+    }
+  }
+
+  &__code {
+    color: @color-gray;
+  }
+}
