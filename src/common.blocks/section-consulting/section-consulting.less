@@ -1,0 +1,72 @@
+@import (reference) '../../less/variables.less';
+
+.section-consulting {
+  padding: 40px 0;
+  color: #ffffff;
+  background: @color-primary-base no-repeat url("./section-consulting-bg.png") center / cover;
+
+  
+  @media screen and (min-width: @desktop) {
+    padding-bottom: 80px;
+    background-image: url("./section-consulting-bg-desktop.png")
+  }
+    
+  &__title {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &__lead {
+    margin-bottom: 24px;
+    text-align: center;
+
+    @media screen and (min-width: @tablet) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    @media screen and (min-width: @tablet) {
+      display: inline;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    max-width: 884px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #ffffff;
+
+    @media screen and (min-width: @tablet) {
+      flex-direction: row;
+      padding: 24px;
+    }
+  }
+
+  &__form-submit {
+    width: 100%;
+
+    @media screen and (min-width: @tablet) {
+      width: 162px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__input-group {
+    width: 100%;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: @tablet) {
+      margin-bottom: 0;
+      margin-right: 16px;
+    }
+  }
+
+  .input {
+    width: 100%;
+  }
+}

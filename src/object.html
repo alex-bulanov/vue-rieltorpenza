@@ -1,0 +1,73 @@
+${require('./common.blocks/page-cover/page-head.html')}
+
+<div class="object">
+
+  <div class="container">
+    <div class="object__wrapper">
+      <div class="object__content">
+        ${require('./common.blocks/section-gallery/section-gallery.html')}
+        ${require('./common.blocks/section-summary/section-summary.html')}
+        ${require('./common.blocks/section-description/section-description.html')}
+        ${require('./common.blocks/section-certificates/section-certificates.html')}
+        ${require('./common.blocks/section-characteristics/section-characteristics.html')}
+      </div>
+
+      <!-- plate -->
+      <div class="object__plate plate">
+        <div class="plate__buttons">
+          <a class="plate__button button button_md button_primary" href="#!">
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            Позвонить
+          </a>
+
+          <button class="plate__button plate__button_open button button_md button_secondary" type="button">
+            Написать
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <use xlink:href="#icon-caret-right-sm"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="plate__messengers">
+          <button class="plate__button plate__button_close button button_md">
+            <span class="visually-hidden">Закрыть список</span>
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <use xlink:href="#icon-caret-right"></use>
+            </svg>
+          </button>
+
+          <div class="plate__messengers-list">
+            <a class="plate__link" href="#!">
+              <span class="visually-hidden">открыть в Telegram</span>
+              <svg width="32" height="32" viewBox="0 0 32 32">
+                <use xlink:href="#icon-telegram"></use>
+              </svg>
+            </a>
+            <a class="plate__link" href="#!">
+              <span class="visually-hidden">открыть в WhatsApp</span>
+              <svg width="32" height="32" viewBox="0 0 32 32">
+                <use xlink:href="#icon-whatsapp"></use>
+              </svg>
+            </a>
+            <a class="plate__link" href="#!">
+              <span class="visually-hidden">открыть в Viber</span>
+              <svg width="32" height="32" viewBox="0 0 32 32">
+                <use xlink:href="#icon-viber"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end plate -->
+
+      <div class="object__manager">
+        ${require('./common.blocks/manager/manager.html')}
+      </div>
+    </div>
+  </div>
+</div>
+
+${require('./common.blocks/popup/popup.html')}
+${require('./common.blocks/page-cover/page-foot.html')}

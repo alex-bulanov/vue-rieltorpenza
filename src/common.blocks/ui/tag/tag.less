@@ -1,0 +1,34 @@
+@import (reference) '../../../less/variables.less';
+
+.tag {
+	border-radius: 2px;
+	white-space: nowrap;
+	background-color: @color-blind-gray;
+	padding: 0 8px;
+	height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: @color-primary-darkest;
+	cursor: pointer;
+
+	& span {
+
+	}
+
+	& svg {
+		width: 20px;
+		height: 20px;
+		fill: @color-gray;
+		margin: 0 -4px 0 8px;
+	}
+
+	&_clear {
+		background-color: @color-dark-gray;
+		color: #fff;
+	}
+
+	&_clear svg {
+		fill: #fff;
+	}
+}

@@ -1,0 +1,40 @@
+@import (reference) '../../less/variables.less';
+
+.section-about {
+  padding: 40px 0;
+  background-color: #ffffff;
+
+  &__wrapper {
+    max-width: 1196px;
+    margin: 0 auto;
+
+
+    @media screen and (min-width: @desktop) {
+      display: grid;
+      grid-template-columns: 266px auto;
+      gap: 56px;
+    }
+  }
+
+  &__img-container {
+    display: none;
+    width: 266px;
+    height: 266px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: @color-primary-lightest;
+     
+    @media screen and (min-width: @desktop) {
+      display: flex;
+    }
+  }
+
+  &__text {
+    margin-bottom: 22px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

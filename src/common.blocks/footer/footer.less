@@ -1,0 +1,180 @@
+@import (reference) '../../less/variables.less';
+
+.footer {
+  padding-top: 40px;
+  background-color: @color-blind-gray;
+
+  &__wrapper {
+    @media screen and (min-width: @desktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 30px;
+      max-width: 1196px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    } 
+  }
+
+  &__contacts {
+    margin-bottom: 40px;
+    text-align: center;
+    
+    @media screen and (min-width: @tablet) {
+      display: grid;
+      grid-template-columns: 200px auto;
+      gap: 40px;
+      padding: 0;
+      text-align: left;
+    }
+    
+    @media screen and (min-width: @desktop) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      align-self: start;
+      margin-bottom: 0;
+    }
+  }
+
+  &__contacts-wrapper {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: @tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    width: 180px;
+    height: 45px;
+    margin: 0 auto 16px;
+
+    @media screen and (min-width: @tablet) {
+      margin: 0 0 16px;      
+    }
+  }
+
+  &__social {
+    @media screen and (min-width: @desktop) {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 24px;
+    }
+  }
+  
+  &__social-lead {
+    margin-bottom: 16px;
+    color: @color-gray;
+
+    @media screen and (min-width: @desktop) {
+      margin: 0;      
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+        
+    @media screen and (min-width: @tablet) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__social-item {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    margin-right: 12px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__privacy {
+    padding: 16px 0;
+    text-align: center;
+    background-color: @color-subtle-gray;
+
+    @media screen and (min-width: @tablet) {
+      text-align: left;
+    }
+  }
+
+  &__privacy-wrapper {
+
+    @media screen and (min-width: @desktop) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1196px;
+      margin: 0 auto;
+    }
+  }
+
+  &__privacy-text {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: @desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__copyright-link {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    @media screen and (min-width: @tablet) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__copyright-icon {
+    margin: 0 4px 0 8px;
+  }
+
+  &__nav {
+    display: none;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: @tablet) {
+      display: block;
+    }
+  }
+
+  &__nav-group {
+    display: none;
+    
+    @media screen and (min-width: @tablet) {
+      display: block;   
+      margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: @desktop) {
+      margin: 0;      
+    }
+  }
+
+  &__nav-title {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: @desktop) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    list-style: none;
+
+    @media screen and (min-width: @desktop) {
+      flex-direction: column;    
+      gap: 16px;
+    }
+  }
+}

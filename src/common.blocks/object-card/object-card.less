@@ -1,0 +1,122 @@
+@import (reference) '../../less/variables.less';
+
+.object-card {
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+	border-radius: 0 0 2px 2px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&__img {
+		position: relative;
+		--aspect-ratio: 3/2;
+
+		&:before {
+			content: '';
+			display: block;
+			padding-bottom: calc(100%/(var(--aspect-ratio)));
+		}
+
+		& img {
+			@fill-container();
+			object-fit: cover;
+		}
+	}
+
+	&__body {
+		padding: 16px;
+		flex: 1 1 auto;
+
+		@media (min-width: @desktop) {
+			padding: 24px 24px 28px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 8px;
+		gap: 16px;
+	}
+
+	&__price {
+
+	}
+
+	&__fav {
+
+	}
+
+	&__deadline,
+	&__per-meter {
+		margin-bottom: 16px;
+		color: @color-gray;
+	}
+
+	&__description {
+		display: grid;
+		gap: 8px;
+		margin-bottom: 24px;
+	}
+
+	&__title {
+		color: @color-primary-base;
+	}
+
+	&__street {
+		color: @color-gray;
+	}
+
+	&__location {
+		color: @color-primary-darkest;
+	}
+
+	&__options {
+		display: flex;
+		gap: 4px;
+
+		& > *:not(:last-child) {
+			padding-right: 4px;
+			border-right: 1px solid @color-light-gray;
+		}
+	}
+
+	&__apartment-category {
+		color: @color-primary-base;
+	}
+
+	&__area {
+		color: @color-primary-darkest;
+	}
+
+	&__floor {
+		color: @color-primary-darkest;
+	}
+
+	&__table {
+
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__table-row {
+		display: flex;
+		gap: 8px;
+	}
+
+	&__table-cell {
+
+		&:nth-child(1) { color: @color-gray; }
+		&:nth-child(2) { color: @color-primary-darkest; }
+	}
+
+	&__button {
+		padding: 0 16px 16px;
+
+		@media (min-width: @desktop) {
+			padding: 0 24px 28px;
+		}
+	}
+}

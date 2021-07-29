@@ -1,0 +1,51 @@
+@import (reference) '../../../less/variables.less';
+
+.section {
+	margin: 40px 0;
+
+	@media (min-width: @desktop) {
+		margin: 80px 0;
+	}
+}
+
+.section-title-wrap {
+	display: grid;
+	flex-wrap: wrap;
+	gap: 24px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 24px;
+
+	@media (min-width: @desktop) {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 40px;
+	}
+
+	&__item {
+
+	}
+}
+.section-title {
+	text-align: center;
+	margin-bottom: 24px;
+
+	.section-title-wrap__item & {
+		margin-bottom: unset !important;
+	}
+
+	@media (min-width: @desktop) {
+		text-align: unset;
+		margin-bottom: 40px;
+	}
+}
+
+.section-subtitle {
+	text-align: center;
+	margin-top: 10px;
+
+	@media (min-width: @desktop) {
+		text-align: unset;
+		margin-top: unset;
+	}
+}

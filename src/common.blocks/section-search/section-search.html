@@ -1,0 +1,21 @@
+<section class="section-search">
+    <div class="section-search__bg">
+        <img src="./img/search-bg.jpg" alt="background">
+    </div>
+    <div class="section-search__inner">
+        <div class="section-search__title h3">Дом&nbsp;там, где&nbsp;ты</div>
+        <div class="section-search__subtitle s2">8 лет помогаем людям стать счастливее</div>
+        <div class="section-search__form">
+            <vue-search-form
+                    :categories="[
+                     {id:8,name:'Вторичная', count:100, parameters: {rooms: ['Комната', 'Студия', '1', '2', '3', '4+'], districts: [{id: 45, name: 'Железнодорожный'}, {id: 53, name: 'Октябрьский'}, {id: 68, name :'Ленинский'}, {id: 75, name: 'Первомайский'}], streets: [{id: 11, name: 'Пушкина'}, {id: 14, name: 'Мира'}, {id: 20, name :'Лермонтова'}], complexes: [{id: 7, name :'Фаворит'}, {id: 86, name :'Триумф'}, {id: 90, name :'Гетто'}]}},
+                     {id:56,name:'Новостройки', count:1488},
+                     {id:22,name:'Дома и участки', count:1245},
+                     {id:16,name:'Коммерческая', count:250},
+                     {id:7,name:'Машиноместа', count:1337}
+                    ]
+                    "
+            ></vue-search-form>
+        </div>
+    </div>
+</section>

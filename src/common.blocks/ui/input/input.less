@@ -1,0 +1,48 @@
+@import (reference) '../../../less/variables.less';
+
+.input {
+  border: 1px solid @color-light-gray;
+  border-radius: 2px;
+  height: 44px;
+  padding: 10px 8px;
+  appearance: none;
+  font-family: 'PT Sans Caption', Helvetica, Arial sans-serif;
+  font-size: 14px;
+  line-height: 100%;
+  color: @color-black;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: @color-secondary-base;
+  }
+}
+
+.input::-webkit-input-placeholder {
+  font-family: 'PT Sans Caption', Helvetica, Arial sans-serif;
+  font-size: 14px;
+  line-height: 100%;
+  color: @color-gray;
+}
+
+.input::-moz-placeholder {
+  font-family: 'PT Sans Caption', Helvetica, Arial sans-serif;
+  font-size: 14px;
+  line-height: 100%;
+  color: @color-gray;
+}
+
+.input:-moz-placeholder {
+  font-family: 'PT Sans Caption', Helvetica, Arial sans-serif;
+  font-size: 14px;
+  line-height: 100%;
+  color: @color-gray;
+}
+
+.input:-ms-input-placeholder {
+  font-family: 'PT Sans Caption', Helvetica, Arial sans-serif;
+  font-size: 14px;
+  line-height: 100%;
+  color: @color-gray;
+}

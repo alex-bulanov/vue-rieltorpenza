@@ -1,0 +1,131 @@
+@import (reference) './variables.less';
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'), local('PTSans-Regular'),
+  url('../assets/fonts/ptsans.woff2') format('woff2'),
+  url('../assets/fonts/ptsans.woff') format('woff'),
+  url('../assets/fonts/ptsans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold'),
+  local('PTSans-Bold'),
+  url('../assets/fonts/ptsansbold.woff2') format('woff2'),
+  url('../assets/fonts/ptsansbold.woff') format('woff'),
+  url('../assets/fonts/ptsansbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans Caption';
+  src: local('PT Sans Caption'),
+  local('PTSans-Caption'),
+  url('../assets/fonts/ptsanscaption.woff2') format('woff2'),
+  url('../assets/fonts/ptsanscaption.woff') format('woff'),
+  url('../assets/fonts/ptsanscaption.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans Caption';
+  src: local('PT Sans Caption Bold'),
+  local('PTSans-CaptionBold'),
+  url('../assets/fonts/ptsanscaptionbold.woff2') format('woff2'),
+  url('../assets/fonts/ptsanscaptionbold.woff') format('woff'),
+  url('../assets/fonts/ptsanscaptionbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  min-height: 100vh;
+  color: @color-text-main;
+  font-family: 'PT Sans', Helvetica, Arial sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  cursor: default;
+  min-width: 320px;
+
+  &.scroll-hide {
+    overflow: hidden;
+  }
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 16px;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 0 56px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.page-wrap {
+
+  &_gray {
+    background-color: @color-blind-gray;
+  }
+}

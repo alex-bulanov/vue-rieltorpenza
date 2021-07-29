@@ -1,0 +1,42 @@
+@import (reference) '../../../less/variables.less';
+
+.input-group {
+  position: relative;
+  display: inline-flex;
+}
+
+.input-group.has-success {
+  input {
+    border-color: @color-primary-base;
+    color: @color-primary-base;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    width: 42px;
+    height: 42px;
+    transform: translateY(-50%);
+    background: #ffffff no-repeat url("./check.svg") center / 24px 24px;
+  }
+}
+
+.input-group.has-error {
+  input {
+    border-color: @color-danger-base;
+    color: @color-danger-base;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    width: 42px;
+    height: 42px;
+    transform: translateY(-50%);
+    background: #ffffff no-repeat url("./ban.svg") center / 24px 24px;
+  }
+}

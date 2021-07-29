@@ -1,0 +1,1 @@
+tippy(document.querySelectorAll('.tooltip'));

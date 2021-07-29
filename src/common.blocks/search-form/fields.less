@@ -1,0 +1,77 @@
+@import (reference) '../../less/variables.less';
+
+.fields {
+
+	&__main-row {
+
+		@media (min-width: @desktop) {
+			display: flex;
+			gap: 40px;
+		}
+	}
+
+	&__row {
+		flex: 1 1 100%;
+		margin-bottom: 24px;
+
+		@media (min-width: @tablet) {
+			display: flex;
+			gap: 40px;
+		}
+	}
+
+	& .input {
+		width: 100%;
+	}
+}
+
+.field-group {
+	flex: 1 1 100%;
+
+	&:not(:last-child) {
+		margin-bottom: 24px;
+
+		@media (min-width: @desktop) {
+			margin-bottom: unset;
+		}
+	}
+
+	&__input-group {
+		display: flex;
+		margin: -4px;
+
+		@media (min-width: @tablet) {
+			margin: -8px;
+		}
+
+		@media (min-width: @desktop) {
+			margin: unset;
+		}
+	}
+
+	&__input {
+		padding: 4px;
+		flex: 1 1 100%;
+
+		@media (min-width: @tablet) {
+			padding: 8px;
+		}
+
+		@media (min-width: @desktop) {
+			padding: unset;
+		}
+
+		& > .input { border-radius: 0; }
+		&:first-child > .input { border-radius: 2px 0 0 2px; }
+		&:last-child > .input { border-radius: 0 2px 2px 0; }
+	}
+}
+
+.field-button {
+
+}
+
+.field-label {
+	margin-bottom: 8px;
+	white-space: nowrap;
+}

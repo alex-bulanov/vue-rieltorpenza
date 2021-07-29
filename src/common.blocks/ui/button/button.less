@@ -1,0 +1,85 @@
+@import (reference) '../../../less/variables.less';
+
+.button {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    border: 1px solid #000;
+    font-family: 'PT Sans Caption', Helvetica, Arial sans-serif;
+    font-weight: 700;
+    transition: @transition;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+
+    /* size */
+    &_sm {
+        height: 36px;
+    }
+
+    &_md {
+        height: 44px;
+    }
+
+    &_lg {
+        height: 56px;
+    }
+    /* size */
+
+    /* color */
+    &_primary {
+        background-color: @color-main;
+        border-color: @color-main;
+        color: #fff;
+
+        &:hover { background-color: @color-main-hover; border-color: @color-main-hover; }
+        &:active { background-color: @color-main-active; border-color: @color-main-active; }
+    }
+
+    &_secondary {
+        background-color: @color-secondary;
+        border-color: @color-secondary;
+        color: @color-primary-darkest;
+
+        &:hover { background-color: @color-secondary-hover; border-color: @color-secondary-hover; }
+        &:active { background-color: @color-secondary-active; border-color: @color-secondary-active; }
+    }
+
+    &_neutral {
+        background-color: @color-neutral;
+        border-color: @color-neutral;
+        color: @color-primary-darkest;
+
+        &:hover { background-color: @color-neutral-hover; border-color: @color-neutral-hover; }
+        &:active { background-color: @color-neutral-active; border-color: @color-neutral-active; }
+    }
+    /* color */
+
+    &__icon {
+        margin-right: 6px;
+
+        & svg {
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &_primary &__icon {
+        fill: #fff;
+    }
+
+    &_secondary &__icon {
+        fill: @color-primary-darkest;
+    }
+
+    &_neutral &__icon {
+        fill: @color-primary-darkest;
+    }
+
+    &__caption {
+
+    }
+}

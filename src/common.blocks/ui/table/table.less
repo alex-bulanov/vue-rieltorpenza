@@ -1,0 +1,32 @@
+@import (reference) '../../../less/variables.less';
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  @media screen and (min-width: @tablet) {
+    max-width: 785px;
+  }
+
+  &__caption {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: @tablet) {
+      text-align: left;
+    }
+  }
+
+  th,
+  td {
+    padding: 8px 4px;
+    text-align: left;
+  }
+
+  th {
+    font-weight: normal;
+  }
+
+  tr:nth-child(even) {
+    background-color: @color-blind-gray;
+  }
+ }

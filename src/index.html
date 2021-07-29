@@ -1,0 +1,45 @@
+${require('./common.blocks/page-cover/page-head.html')}
+
+<div class="page-wrap page-wrap_gray">
+
+    ${require('./common.blocks/section-search/section-search.html')}
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title-wrap">
+                <div class="section-title-wrap__item">
+                    <h2 class="section-title h4">Квартиры в новостройках</h2>
+                </div>
+                <div class="section-title-wrap__item">
+                    <div class="button button_md button_neutral">
+                        <div class="button__icon"><svg class="icon"><use xlink:href="#icon-map"></use></svg></div>
+                        <div class="button__caption">Посмотреть на карте</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        ${require('./common.blocks/swiper-object/swiper-object.html')}
+    </section>
+
+    ${require('./common.blocks/section-map/section-map.html')}
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title-wrap">
+                <div class="section-title-wrap__item">
+                    <h2 class="section-title h4">Горячие объекты</h2>
+                    <div class="section-subtitle c1">Объекты недвижимости, добавленные в базу за последние 24 часа</div>
+                </div>
+            </div>
+        </div>
+        ${require('./common.blocks/swiper-object/swiper-object-apart.html')}
+    </section>
+
+    ${require('./common.blocks/section-why-us/section-why-us.html')}
+    ${require('./common.blocks/section-features/section-features.html')}
+    ${require('./common.blocks/section-consulting/section-consulting.html')}
+    ${require('./common.blocks/section-about/section-about.html')}
+
+</div>
+
+${require('./common.blocks/page-cover/page-foot.html')}

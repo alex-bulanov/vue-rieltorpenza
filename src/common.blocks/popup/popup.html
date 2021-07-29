@@ -1,0 +1,52 @@
+<div class="popup" id="popup">
+  <button class="popup__close close-popup">
+    <span class="visually-hidden">
+      Закрыть
+    </span>
+    <svg width="24" height="24" viewBox="0 0 24 24">
+      <use xlink:href="#icon-close"></use>
+    </svg>
+  </button>
+
+  <div class="popup__wrapper">
+
+    <div class="popup__body tabs">
+      <div class="popup__header">
+        <div class="popup__header-contnent">
+          <p class="popup__header-title h5">1-комн. квартира, 25,47 м²</p>
+          <p class="popup__header-price h6">2 990 000 ₽</p>
+          <p class="popup__header-address c1">Пенза, Первомайский р-н, Красная ул, 49</p>
+          <p class="popup__header-square c1">37 374 ₽/м²</p>
+        </div>
+        <div class="popup__buttons tabs__triggers">
+          <a class="popup__button popup__button_map button button_sm tabs__triggers-item" href="#tab-1">
+            <svg width="16" height="16" viewBox="0 0 16 16">
+              <use xlink:href="#icon-map"></use>
+            </svg>
+            карта
+          </a>
+          <a class="popup__button popup__button_photo button button_sm tabs__triggers-item" href="#tab-2">
+            <svg width="16" height="16" viewBox="0 0 16 16">
+              <use xlink:href="#icon-image"></use>
+            </svg>
+            фото
+          </a>
+        </div>
+      </div>
+
+      <div class="popup__content tabs__content">
+        <div class="tabs__content-item" id="tab-1">
+          Тут будет карта
+        </div>
+        <div class="tabs__content-item" id="tab-2">
+          ${require('../popup-gallery/popup-gallery.html')}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="popup__manager">
+      ${require('../manager/manager.html')}
+    </div>
+  </div>
+</div>

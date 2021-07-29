@@ -1,0 +1,40 @@
+@import (reference) '../../less/variables.less';
+
+.ui-product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+}
+
+.ui-product-list__item {
+    flex: 0 0 calc(100% / 4);
+    max-width: calc(100% / 4);
+    padding: 20px;
+}
+
+.ui-icon-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        margin: 10px;
+
+        & .icon {
+            width: 28px;
+            height: 28px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+.ui-button-row {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    &__item {
+        margin: 3px;
+    }
+}

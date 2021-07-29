@@ -1,0 +1,53 @@
+@import (reference) '../../less/variables.less';
+
+.rooms-switcher {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -4px;
+
+	@media (min-width: @tablet) {
+		flex-wrap: nowrap;
+		margin: -8px;
+	}
+
+	@media (min-width: @desktop) {
+		margin: 0;
+	}
+
+	&__item {
+		padding: 4px;
+
+		@media (min-width: @tablet) {
+			flex: 1 1 100%;
+			padding: 8px;
+		}
+
+		@media (min-width: @desktop) {
+			flex: unset;
+			padding: 0;
+			margin-left: -1px;
+
+			&:first-child > .button { border-radius: 2px 0 0 2px; }
+			&:last-child > .button { border-radius: 0 2px 2px 0; }
+		}
+
+		& > .button {
+			width: 100%;
+
+			@media (min-width: @desktop) {
+				border-radius: 0;
+			}
+		}
+
+		& > .button_neutral {
+
+			@media (min-width: @desktop) {
+				border: 1px solid @color-light-gray;
+				background-color: #fff;
+
+				&:hover { border-color: @color-light-gray; }
+				&:active { border-color: @color-light-gray; }
+			}
+		}
+	}
+}

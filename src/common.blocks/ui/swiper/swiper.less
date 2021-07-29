@@ -1,0 +1,78 @@
+@import (reference) '../../../less/variables.less';
+
+.swiper-container {
+
+}
+
+.swiper-pagination {
+
+}
+
+.swiper-pagination-bullet {
+
+}
+
+
+
+.swiper-pagination-bullet-active {
+
+}
+
+.swiper-slide {
+
+}
+
+.swiper-button-custom {
+    border-radius: 4px;
+    background-color: @color-primary-base;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: @desktop) {
+        display: flex;
+    }
+
+    &:after {
+        display: none;
+    }
+
+    & svg {
+        width: 32px;
+        height: 32px;
+        fill: #fff;
+    }
+}
+
+.swiper-button-custom.swiper-button-disabled {
+    opacity: 0;
+}
+
+.swiper-pagination-bullets.swiper-pagination_custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    position: unset;
+    margin-top: 30px;
+}
+
+.swiper-pagination_custom .swiper-pagination-bullet {
+    display: block;
+    background-color: @color-light-gray;
+	border-radius: unset;
+    width: 30px;
+    height: 4px;
+    opacity: 1;
+    transition: transform .2s ease-out, background-color .2s ease-out;
+
+    &.swiper-pagination-bullet-active {
+        background-color: @color-dark-gray;
+    }
+}
+
+.swiper-pagination-bullets.swiper-pagination_custom .swiper-pagination-bullet {
+    margin: 0 4px;
+}

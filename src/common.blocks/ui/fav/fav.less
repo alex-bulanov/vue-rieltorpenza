@@ -1,0 +1,27 @@
+@import (reference) '../../../less/variables.less';
+
+.fav {
+	--fav-size: 24px;
+	width: var(--fav-size);
+	height: var(--fav-size);
+	cursor: pointer;
+
+	& svg {
+		display: block;
+		width: 100%;
+		height: 100%;
+		fill: rgba(84, 178, 70, 0);
+		stroke: @color-dark-gray;
+		stroke-width: 2px;
+		transition: @transition;
+	}
+
+	&:hover svg {
+		stroke: @color-danger-base;
+	}
+
+	&.is-active svg {
+		fill: @color-danger-base;
+		stroke: @color-danger-base;
+	}
+}

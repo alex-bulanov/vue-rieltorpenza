@@ -1,0 +1,68 @@
+@import (reference) '../../less/variables.less';
+
+.section-why-us {
+    
+  &__cards {
+    display: flex;
+    align-items: stretch;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 16px 0;
+    overflow-y: auto;
+
+    @media screen and (min-width: @tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 0 30px 0;
+    }
+
+    @media screen and (min-width: @wide) {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 56px 0;
+    }
+  }
+  
+  &__card {
+    border-radius: 2px;
+    flex-shrink: 0;
+    width: 288px;
+    margin-right: 8px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @media screen and (min-width: @tablet) {
+      width: auto;
+      padding: 24px;
+      margin-right: 0;
+    }
+
+    @media screen and (min-width: @wide) {
+      padding: 40px;
+    }
+  }
+
+  &__card-title-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    
+    @media screen and (min-width: @tablet) {
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__card-icon {
+    @media screen and (min-width: @tablet) {
+      width: 80px;
+      height: 80px;
+    }    
+  }
+}

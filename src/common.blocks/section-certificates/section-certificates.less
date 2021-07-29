@@ -1,0 +1,60 @@
+@import (reference) '../../less/variables.less';
+
+.section-certificates {
+
+  &__cards {
+    display: grid;
+    
+    gap: 24px;
+
+    @media screen and (min-width: @tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 1122px;
+    }
+  }
+
+  &__card {
+    padding: 24px;
+    background-color: @color-primary-lightest;
+
+    @media screen and (min-width: @tablet) {
+      width: 100%;
+
+    }
+
+    @media screen and (min-width: @desktop) {
+      max-width: 549px;
+    }
+  }
+
+  &__card-title {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+  }
+
+  &__icon {
+    display: none;
+
+    @media screen and (min-width: @tablet) {
+      display: block;
+      margin-right: 24px;
+    }
+  }
+
+  h3 {
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__card-desc {
+    margin-bottom: 24px;
+  }
+
+  &__card-link.button {
+    display: inline-flex;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}

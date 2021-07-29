@@ -1,0 +1,248 @@
+@import (reference) '../../less/variables.less';
+
+.section-summary.section {
+  margin-top: 24px;
+
+   @media screen and (min-width: @tablet) {
+    margin-top: 24px;
+  } 
+}
+
+.section-summary {
+  @media screen and (min-width: @tablet) {
+    display: grid;
+    grid-template-areas: "block-1 block-2"
+                            "table table";
+    gap: 80px;
+  }
+
+  &__block:first-child {
+    @media screen and (min-width: @tablet) {
+      grid-area: block-2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+    }
+  }
+
+  &__block:last-of-type {
+    @media screen and (min-width: @tablet) {
+      grid-area: block-1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__price {
+    margin-bottom: 16px;
+  }
+
+  &__price-old {
+    text-decoration: line-through;
+    color: @color-gray;
+  }
+
+  &__square {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: @tablet) { 
+      margin-bottom: 16px;
+    }
+  }
+
+  &__mortgage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    color: @color-primary-base;
+
+    @media screen and (min-width: @tablet) { 
+      margin-bottom: 0;
+    }
+  }
+
+  &__tooltip {
+    margin-left: 10px;
+  }
+
+  &__address {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: @tablet) { 
+      margin-bottom: 8px;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    fill: @color-gray;
+  }
+
+  &__icon {
+    margin-right: 4px;
+  }
+
+  &__views,
+  &__posted {
+    display: flex;
+    align-items: center;
+    color: @color-gray;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: @tablet) {
+      margin-bottom: 0;
+      flex-direction: row;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: @tablet) { 
+      margin-bottom: 0;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__button_fav {
+    svg {
+      fill: none;
+      stroke-width: 3px;
+      stroke: @color-primary-darkest;
+      transition: @transition;
+    }
+
+    &:hover {
+      svg {
+        stroke: @color-danger-base;
+      }
+    }
+  }
+
+  &__button_fav.is-active {
+    svg {
+      fill: @color-danger-base;
+      stroke: @color-danger-base;
+    }
+  }
+
+  &__table {
+    border-collapse: collapse;
+    border: 1px solid @color-subtle-gray;
+    width: 100%;
+
+    @media screen and (min-width: @tablet) {
+      grid-area: table;
+
+      tbody {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 16px 0;
+      }
+    }
+
+    @media screen and (min-width: @desktop) {
+      tbody {
+        display: initial;
+        padding: 0;
+      }
+    }
+
+    @media screen and (min-width: @wide) {
+      tbody {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 16px 0;
+      }
+    }
+  }
+
+  &__table-row {
+    @media screen and (min-width: @tablet) { 
+      border-right: 1px solid @color-subtle-gray;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0 16px;
+    }
+
+    @media screen and (min-width: @desktop) {
+      border: none;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+    }
+
+    @media screen and (min-width: @wide) { 
+      border-right: 1px solid @color-subtle-gray;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      padding: 0 16px;
+    }
+  }
+
+  &__table-row:last-of-type {
+    @media screen and (min-width: @tablet) { 
+      border-right: none;
+    }
+  }
+
+  &__table-th {
+    padding: 8px;
+    font-weight: 400;
+    text-align: left;
+    color: @color-gray;
+
+    @media screen and (min-width: @tablet) { 
+      padding: 0;
+    }
+
+    @media screen and (min-width: @desktop) {
+      padding: 8px;
+      width: 50%;
+    }
+
+    @media screen and (min-width: @wide) { 
+      padding: 0;
+      width: auto;
+    }
+  }
+
+  &__table-td {  
+    padding: 8px;  
+
+    @media screen and (min-width: @tablet) { 
+      padding: 0 0 8px;
+    }
+
+    @media screen and (min-width: @desktop) {
+      padding: 8px 0;
+    }
+
+    @media screen and (min-width: @wide) { 
+      padding: 0 0 8px;;
+    }
+  }
+}
