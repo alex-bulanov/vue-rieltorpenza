@@ -4,7 +4,34 @@
 
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                ${require('../.././common.blocks/object-card/object-card-apart.html')}
+                <vue-object-card-apart :item='{
+                    id: "7", 
+                    coordinates: [53.213060, 45.061406],
+                    location: "Запрудный",
+                    street: "Красная",
+                    building: "49",
+                    category: "1-комн. квартира",
+                    isFav: false,
+                    price: "2990000",
+                    priceOld: "3950000",
+                    pricePerMeter: "27374",
+                    totalArea: "25,47",
+                    floor: "8/10",
+                    images: [
+                    {src: "${require("../object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+                    {src: "${require("../object-item/images/img-2.jpg")}", alt: "Спальня"},
+                    {src: "${require("../object-item/images/img-3.jpg")}", alt: "Кухня"},
+                    {src: "${require("../object-item/images/img-4.jpg")}", alt: "Ванная"},
+                    {src: "${require("../object-item/images/img-5.jpg")}", alt: "Ванная"},
+                    {src: "${require("../object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+                    {src: "${require("../object-item/images/img-2.jpg")}", alt: "Спальня"},
+                    {src: "${require("../object-item/images/img-3.jpg")}", alt: "Кухня"},
+                    {src: "${require("../object-item/images/img-4.jpg")}", alt: "Ванная"},
+                    {src: "${require("../object-item/images/img-5.jpg")}", alt: "Ванная"},
+                    ],
+                }'>
+                </vue-object-card-apart>
+                <!-- ${require('../.././common.blocks/object-card/object-card-apart.html')} -->
             </div>
             <div class="swiper-slide">
                 ${require('../.././common.blocks/object-card/object-card-apart.html')}
@@ -26,11 +53,15 @@
     </div>
 
     <div class="swiper-button-prev swiper-button-custom">
-        <svg><use xlink:href="#icon-caret-left"></use></svg>
+        <svg>
+            <use xlink:href="#icon-caret-left"></use>
+        </svg>
     </div>
 
     <div class="swiper-button-next swiper-button-custom">
-        <svg><use xlink:href="#icon-caret-right"></use></svg>
+        <svg>
+            <use xlink:href="#icon-caret-right"></use>
+        </svg>
     </div>
 
     <div class="swiper-pagination swiper-pagination_custom"></div>
