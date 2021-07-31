@@ -1,3 +1,32 @@
+/**
+* vue страница объекта
+* Принимает входные данные:
+* @property Object{} item - объект с параметрами для страницы.
+* {Number} item.id - id объект недвижимости
+* {String} item.title - название объекта недвижимости
+* {String} item.code - код объекта недвижимости
+* {Object} item.mortgage - объект с описанием скидки по ипотеке
+* {Object} item.coordinates - массив с координатами на карте
+* {String} item.city - город расположения
+* {String} item.location - р-он расположения
+* {String} item.street - улица расположения
+* {Number} item.building - номер дома 
+* {String} item.category - категория недвижимости,
+* {Boolean} item.isFav - флаг избранное
+* {String} item.posted - дата публикации объявления
+* {Number} item.views - кол-во просмотров
+* {Number} item.price - новая цена
+* {Number} item.priceOld - старая цена
+* {Number} item.pricePerMeter - цена за метр
+* {Object} item.images - массив с фото,
+* {Object} item.summary - массив объектов с данными для сводной таблицы,
+* {Object} item.characteristics - массив объектов с данными для таблицы характеристик
+**
+*/
+
+
+
+
 <template>
   <div class="vue-object-item object-item">
     <div class="object-item__header">

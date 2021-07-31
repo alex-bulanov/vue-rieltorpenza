@@ -88,10 +88,12 @@
 
 	&__area {
 		color: @color-primary-darkest;
+		white-space: nowrap;
 	}
 
 	&__floor {
 		color: @color-primary-darkest;
+		white-space: nowrap;
 	}
 
 	&__table {
@@ -121,6 +123,8 @@
 	}
 }
 
+// ---- added styles
+
 .object-card__link {
 		&::after {
 		content: "";
@@ -134,13 +138,15 @@
 }
 
 .object-card__gallery-container {
+	position: relative;
 	overflow: hidden;
 	display: flex;
-	position: relative;
-	z-index: 1;
+	z-index: 10;
 }
 
 .object-card__gallery-wrapper {
+	position: relative;
+	left: 0;
 	display: flex;
 	width: 100%;
 }
@@ -148,6 +154,59 @@
 .object-card__gallery-slide {
 	min-width: 100%;
 	cursor: pointer;
+}
+
+.object-card__img {
+	display: flex;
+	width: 100%;
+}
+
+.object-card .object-card__pagination {
+	position: absolute;
+	left: 0;
+	bottom: 16px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 4px;
+	padding: 0 56px;
+	z-index: 2;
+}
+
+.object-card__pagination-item {
+	flex-grow: 1;
+	max-width: 31.2px;
+	height: 4px;
+	margin-right: 8px;
+	background: rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+
+	&_active {
+		background-color: @color-secondary-base;
+	}
+}
+
+.object-card	.object-card__fav {
+	position: relative;
+	z-index: 2;
+}
+
+.object-card__cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.object-card__img-cover {
+	flex-grow: 1;
 }
 
 .object-card__img-overlay {
@@ -183,46 +242,4 @@
 			background: no-repeat url("./img/icon-pic.svg") center / cover;
 		}
 	}
-}
-
-.object-card .object-card__pagination {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	display: flex;
-	width: 100%;
-	height: 100%;
-	padding: 0 56px;
-}
-
-.object-card__pagination-item {
-	flex-grow: 1;
-	height: 4px;
-	margin-top: auto;
-	margin-bottom: 16px;
-	margin-right: 8px;
-	cursor: pointer;
-	background: rgba(255, 255, 255, 0.6);
-
-	&:last-of-type {
-		margin-right: 0;
-	}
-
-	&_active {
-		background-color: @color-secondary-base;
-	}
-}
-
-.object-card__cover {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-}
-
-.object-card__img-cover {
-	flex-grow: 1;
 }

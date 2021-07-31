@@ -29,7 +29,12 @@
               :key="index"
             >
               <div class="object-card__img">
-                <img :src="image.src" width="" height="" :alt="image.alt" />
+                <img
+                  :src="image.src"
+                  width="100%"
+                  height="100%"
+                  :alt="image.alt"
+                />
 
                 <div
                   class="object-card__img-overlay"
@@ -125,6 +130,7 @@ export default {
   data() {
     return {
       isShowContacts: false,
+      slider: null,
     };
   },
   filters: {
@@ -136,9 +142,10 @@ export default {
     },
 
     createCover() {
+      const vm = this;
       const coverElements = document.createElement("div");
       coverElements.classList.add("object-card__cover");
-      document
+      vm.$refs.slider
         .querySelectorAll(".object-card__pagination-item")
         .forEach((item, index) => {
           const elem = document.createElement("div");
@@ -147,6 +154,46 @@ export default {
           coverElements.append(elem);
         });
       return coverElements;
+    },
+
+    createSlider() {
+      const vm = this;
+      this.slider = new Swiper(this.$refs.slider, {
+        loop: false,
+        spaceBetween: 0,
+        wrapperClass: "object-card__gallery-wrapper",
+        slideClass: "object-card__gallery-slide",
+        slidesPerView: 1,
+        centeredSlides: true,
+        pagination: {
+          el: ".object-card__pagination",
+          bulletElement: "div",
+          clickable: true,
+          bulletClass: "object-card__pagination-item",
+          bulletActiveClass: "object-card__pagination-item_active",
+          renderBullet: function (index, className) {
+            return vm.item.images.length > 1
+              ? `<div class="${className}" data-index="${index}"></div>`
+              : "";
+          },
+        },
+      });
+
+      if (!this.isTouchDevice) {
+        vm.$refs.slider.prepend(this.createCover());
+        vm.$refs.slider
+          .querySelectorAll(".object-card__img-cover")
+          .forEach((item) => {
+            item.addEventListener("mouseover", (event) => {
+              this.slider.slideTo(event.target.dataset.index, 0);
+            });
+          });
+        vm.$refs.slider
+          .querySelector(".object-card__cover")
+          .addEventListener("mouseleave", () => {
+            this.slider.slideTo(0, -100);
+          });
+      }
     },
   },
   computed: {
@@ -161,41 +208,9 @@ export default {
   },
 
   mounted() {
-    this.slider = new Swiper(this.$refs.slider, {
-      loop: false,
-      spaceBetween: 0,
-      wrapperClass: "object-card__gallery-wrapper",
-      slideClass: "object-card__gallery-slide",
-      slidesPerView: 1,
-      centeredSlides: true,
-      pagination: {
-        el: ".object-card__pagination",
-        bulletElement: "div",
-        clickable: true,
-        bulletClass: "object-card__pagination-item",
-        bulletActiveClass: "object-card__pagination-item_active",
-        renderBullet: function (index, className) {
-          return `<div class="${className}" data-index="${index}"></div>`;
-        },
-      },
+    this.$nextTick(function () {
+      this.createSlider();
     });
-
-    if (!this.isTouchDevice) {
-      document
-        .querySelector(".object-card__gallery-container")
-        .prepend(this.createCover());
-      document.querySelectorAll(".object-card__img-cover").forEach((item) => {
-        item.addEventListener("mouseover", (event) => {
-          this.slider.slideTo(event.target.dataset.index, 0);
-        });
-      });
-
-      document
-        .querySelector(".object-card__cover")
-        .addEventListener("mouseleave", () => {
-          this.slider.slideTo(0, -100);
-        });
-    }
   },
 };
 </script>
