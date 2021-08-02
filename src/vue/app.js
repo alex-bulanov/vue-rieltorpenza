@@ -9,6 +9,7 @@ import VueObjectItem from './components/object-item/vue-object-item.vue';
 
 import VueObjectCardApart from './components/object-card/vue-object-card-apart.vue';
 
+
 window.Vue = Vue;
 
 Vue.use(VueAxios, axios);
@@ -22,6 +23,7 @@ new Vue({
     VueSearchFormItems,
     VueObjectItem,
     VueObjectCardApart,
+
   },
   data: {
     parameters: {},

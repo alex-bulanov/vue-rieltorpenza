@@ -1,19 +1,19 @@
 /**
 * vue карточка объекта
 * Принимает входные данные:
-* @property Object{} object - объект с параметрами для карточки.
-* {Number} object.id - id  
-* {Object} object.coordinates - координаты на карте
-* {String} object.location - район расположения 
-* {String} object.street - улица расположения 
-* {String} object.building - номер строения
-* {Boolean} object.isFav - отмечен ли объект как избранный
-* {Number} object.price - цена 
-* {Number} object.priceOld - старая цена
-* {Number} object.pricePerMeter - цена за метр
-* {Number} object.totalArea - общая площадь
-* {String} object.floor - этаж 
-* {Object} object.images - массив с фото
+* @property Object{} item - объект с параметрами для карточки.
+* {Number} item.id - id  
+* {Object} item.coordinates - координаты на карте
+* {String} item.location - район расположения 
+* {String} item.street - улица расположения 
+* {String} item.building - номер строения
+* {Boolean} item.isFav - отмечен ли объект как избранный
+* {Number} item.price - цена 
+* {Number} item.priceOld - старая цена
+* {Number} item.pricePerMeter - цена за метр
+* {Number} item.totalArea - общая площадь
+* {String} item.floor - этаж 
+* {Object} item.images - массив с фото
 **
 */
 
