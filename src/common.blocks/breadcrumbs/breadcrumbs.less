@@ -1,0 +1,64 @@
+@import (reference) '../../less/variables.less';
+
+.breadcrumbs {
+  padding: 12px 0;
+
+  @media screen and (min-width: @desktop) {
+    padding: 0;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item:not(:nth-last-of-type(2)) {
+    display: none;
+
+    @media screen and (min-width: @tablet) {
+      display: block;
+    }
+  } 
+
+  &__item {
+    &::before {
+      content: "";
+      display: inline-flex;
+      width: 7px;
+      height: 7px;
+      margin: 0 7px 0 6px;
+      border-top: 1px solid @color-primary-darkest;
+      border-right: 1px solid @color-primary-darkest;
+      transform: rotate(-135deg); 
+    }
+
+    @media screen and (min-width: @tablet) {
+      display: block;
+
+      &::before {
+        content: "/";
+        display: inline-flex;
+        width: auto;
+        height: auto;
+        margin: 0 6px;
+        border-top: none;
+        border-right: none;
+        transform: none; 
+      }
+    }
+  }
+
+  &__item:first-of-type {
+    @media screen and (min-width: @tablet) {
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__link[href="#!"] {
+    color: @color-gray;
+    cursor: default;
+  }
+}
