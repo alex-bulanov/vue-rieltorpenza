@@ -1,6 +1,7 @@
 @import (reference) '../../less/variables.less';
 
 .object-card {
+	position: relative;
 	background-color: #fff;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
 	border-radius: 0 0 2px 2px;
@@ -27,6 +28,10 @@
 	&__body {
 		padding: 16px;
 		flex: 1 1 auto;
+
+		& > *:last-child {
+			margin-bottom: 0;
+		}
 
 		@media (min-width: @desktop) {
 			padding: 24px 24px 28px;

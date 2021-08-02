@@ -1,3 +1,176 @@
 ${require('./common.blocks/page-cover/page-head.html')}
+<div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link c1" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link c1" href="#!" onclick="return false;">Каталог недвижимости</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
+<vue-category :items='[
+    {
+        id: "1", 
+        coordinates: [53.213763, 45.059540],
+        location: "Запрудный",
+        street: "Красная ул, 49",
+        category: "1-комн. квартира",
+        isFav: false,
+        price: "1770000",
+        priceOld: "3950000",
+        pricePerMeter: "27374",
+        totalArea: "25,47",
+        floor: "8/10",
+        rjsdsalds:"sdsds",
+
+        images: [
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+        ],                    
+    },
+    {
+        id: "2", 
+        coordinates: [53.214367, 45.061435],
+        location: "Арбеково",
+        street: "Красная ул, 49",
+        category: "1-комн. квартира",
+        isFav: false,
+        price: "2090000",
+        priceOld: "3950000",
+        pricePerMeter: "27374",
+        totalArea: "25,47",
+        floor: "8/10",
+
+        images: [
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+        ],                    
+    },
+    {
+        id: "3", 
+        coordinates: [53.214728, 45.060689],
+        location: "Окружная",
+        street: "Красная ул, 49",
+        category: "1-комн. квартира",
+        isFav: false,
+        price: "1990000",
+        priceOld: "3950000",
+        pricePerMeter: "27374",
+        totalArea: "25,47",
+        floor: "8/10",
+
+        images: [
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+        ],                    
+    },
+    {
+        id: "4", 
+        coordinates: [53.213060, 45.061406],
+        location: "Ахуны",
+        street: "Красная ул, 49",
+        category: "1-комн. квартира",
+        isFav: true,
+        price: "3990000",
+        priceOld: "3950000",
+        pricePerMeter: "27374",
+        totalArea: "25,47",
+        floor: "8/10",
+
+        images: [
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+        ],                    
+    },
+    {
+        id: "5", 
+        coordinates: [53.214858, 45.053494],
+        location: "Центр",
+        street: "Красная ул, 49",
+        category: "1-комн. квартира",
+        isFav: false,
+        price: "4990000",
+        priceOld: "3950000",
+        pricePerMeter: "27374",
+        totalArea: "25,47",
+        floor: "8/10",
+
+        images: [
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+        ],                    
+    },
+    {
+        id: "6", 
+        coordinates: [53.210344, 45.059872],
+        location: "Терновка",
+        street: "Красная ул, 49",
+        category: "1-комн. квартира",
+        isFav: true,
+        price: "2990000",
+        priceOld: "3950000",
+        pricePerMeter: "27374",
+        totalArea: "25,47",
+        floor: "8/10",
+
+        images: [
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-1.jpg")}", alt: "Кухня"}, 
+            {src: "${require("./common.blocks/object-item/images/img-2.jpg")}", alt: "Спальня"},
+            {src: "${require("./common.blocks/object-item/images/img-3.jpg")}", alt: "Кухня"},
+            {src: "${require("./common.blocks/object-item/images/img-4.jpg")}", alt: "Ванная"},
+            {src: "${require("./common.blocks/object-item/images/img-5.jpg")}", alt: "Ванная"},
+        ],                    
+    },
+  ]'>
+
+</vue-category>
 ${require('./common.blocks/page-cover/page-foot.html')}

@@ -1,0 +1,128 @@
+@import (reference) '../../less/variables.less';
+
+.category.section {
+  margin: 24px 0;
+
+  @media screen and (min-width: @desktop) {
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.category {
+
+  &__header {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: @desktop) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 42px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: @desktop) {
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
+  }
+
+  &__select {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 10px 8px;
+
+    svg {
+      margin-right: 8px; 
+    }
+
+    @media screen and (min-width: @desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__map-button {
+    width: 100%;
+    // max-width: 288px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: @tablet) {
+      width: 288px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    width: 100%;
+    
+    @media screen and (min-width: @desktop) {
+      gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__list-container {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    
+    @media screen and (min-width: @desktop) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__list {
+    display: grid;
+    align-items: start;
+    height: 100%;
+    gap: 24px;
+  
+    @media screen and (min-width: @tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: @ultra-wide) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    overflow: hidden;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+  }
+
+  &__pagination {
+    width: 100%;
+    min-height: 36px;
+    margin-top: 40px;
+    // background-color: purple;
+
+    @media screen and (min-width: @desktop) {
+      margin-bottom: 40px;
+      margin-top: 0;
+    }
+  }
+
+
+  &__category-map {
+    width: 100%;
+    height: 100%;
+
+    @media screen and (min-width: @desktop) {
+      padding-top: 76px;
+      display: block;
+    }
+  }
+}
+
+
+.category__map-button.button {
+  @media screen and (min-width: @desktop) {
+    display: none;
+  }
+} 

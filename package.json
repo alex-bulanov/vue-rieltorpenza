@@ -28,7 +28,8 @@
     "normalize.css": "^8.0.0",
     "swiper": "^5.2.1",
     "vue": "^2.5.16",
-    "vue-axios": "^3.2.2"
+    "vue-axios": "^3.2.2",
+    "vuejs-paginate": "^2.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.6",
