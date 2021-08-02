@@ -1,3 +1,120 @@
 <header class="header">
-    <div class="container">header</div>
+    <div class="container">
+        <div class="header__container">
+            <button class="header__menu-open" type="button" aria-label="Показать меню">
+                <span></span>
+            </button>
+            <a class="header__logo" href="index.html">
+                <picture>
+                    <img class="header__logo-img" src="./header-logo.png" srcset="${require('./header-logo@2x.png')} 2x"
+                        width="180" height="45" alt="Логотип компании «Риэлтор»">
+                </picture>
+            </a>
+
+            <div class="header__contacts">
+                <a class="header__phone c2" href="tel:+79624747374">
+                    <svg class="">
+                        <use xlink:href="#icon-phone" width="24" height="24"></use>
+                    </svg>
+                    +7 (962) 474-73-74</a>
+
+                <span class="header__lead c1">Звоните нам с 7:00 до 22:00</span>
+            </div>
+
+            <div class="header__menu menu">
+
+                <button class="header__menu-close menu__close" type="button" aria-label="Закрыть меню">
+                    <svg class="icon">
+                        <use xlink:href="#icon-close" width="24" height="24"></use>
+                    </svg>
+                </button>
+
+                <div class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link с2" href="#!">Вторичка</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link_active с2" href="#!">Новостройки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link с2" href="#!">Дома и участки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link с2" href="#!">Коммерческая</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link с2" href="#!">Машиноместа</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link с2" href="#!">Обмен</a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu__sub-list">
+                        <li class="menu__item">
+                            <a class="menu__link с1" href="#!">О компании</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link с1" href="#!">Сотрудники</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link с1" href="#!">Партнёры</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link с1" href="#!">Вакансии</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link с1" href="#!">Машиноместа</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link с1" href="#!">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header__marked">
+                <a class="header__marked-link header__marked-link_favs" href="#">
+                    <span class="header__marked-value">24</span>
+                    <span class="visually-hidden">избранное</span>
+                    <svg class="icon">
+                        <use xlink:href="#icon-heart"></use>
+                    </svg>
+                </a>
+                <a class="header__marked-link header__marked-link_views" href="#">
+                    <span class="header__marked-value">5</span>
+                    <span class="visually-hidden">недавно смотрели</span>
+                    <svg class="">
+                        <use xlink:href="#icon-eye"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="header__nav nav">
+        <div class="container">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link nav__link_current с2" href="category.html">Вторичка</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link_active с2" href="#!">Новостройки</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link с2" href="#!">Дома и участки</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link с2" href="#!">Коммерческая</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link с2" href="#!">Машиноместа</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link с2" href="#!">Обмен</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
