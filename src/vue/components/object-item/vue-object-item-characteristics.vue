@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="vue-object-item-characteristics section-characteristics section"
-  >
+  <section class="vue-object-item-characteristics section-characteristics">
     <table class="section-characteristics__table table">
       <caption class="table__caption h6">
         Характеристики
