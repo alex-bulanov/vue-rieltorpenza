@@ -21,14 +21,29 @@
           <div class="category__list">
             <div
               class="category__item"
-              v-for="(item, index) in items"
+              v-for="(card, index) in cards"
               :key="index"
             >
-              <vue-object-card-apart :item="item"></vue-object-card-apart>
+              <vue-object-card-apart :item="card"></vue-object-card-apart>
             </div>
           </div>
 
-          <div class="category__pagination"></div>
+          <div class="category__pagination pagination">
+            <vue-paginate
+              :page-count="pageCount"
+              :click-handler="pageChangeHandler"
+              :prev-text="'<'"
+              :next-text="'>'"
+              :container-class="'pagination__container'"
+              :page-class="'pagination__item'"
+              :active-class="'pagination__item_active'"
+              :prev-class="'pagination__item pagination__item_prev'"
+              :next-class="'pagination__item pagination__item_next'"
+              :page-link-class="'pagination__link'"
+              :disabled-class="'pagination__item_disabled'"
+            >
+            </vue-paginate>
+          </div>
         </div>
 
         <div class="category__category-map">
@@ -40,46 +55,43 @@
 </template>
 
 <script>
+import axios from "axios";
+import paginationMixin from "../mixins/pagination.mixin.js";
+import VuePaginate from "vuejs-paginate";
 import VueObjectCardApart from "../object-card/vue-object-card-apart.vue";
 
 export default {
   name: "vue-category",
-  props: {
-    items: {
-      type: Array,
-      default() {
-        return [];
-      },
-    },
-  },
+  props: {},
   components: {
     VueObjectCardApart,
+    VuePaginate,
   },
   computed: {},
-  methods: {},
+  methods: {
+    pageChangeHandler() {
+      console.log("click");
+    },
+  },
+  mixins: [paginationMixin],
   data() {
     return {
       coordinates: [],
       map: null,
+      cards: null,
     };
   },
-  mounted() {
-    this.items.forEach((item) => {
-      this.coordinates.push(item.coordinates);
-    });
-
-    const vm = this;
-    DG.then(function () {
-      vm.map = DG.map("map", {
-        center: [53.21306, 45.061406],
-        zoom: 17,
-        zoomControl: true,
-        fullscreenControl: true,
-      });
-      vm.coordinates.forEach((item) => {
-        DG.marker(item).addTo(vm.map);
-      });
-    });
+  async mounted() {
+    // const data = await axios("http://localhost:3000/items", {
+    //   method: "GET",
+    // })
+    //   .then((items) => {
+    //     return items;
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //     return error;
+    //   });
   },
 };
 </script>

@@ -1,0 +1,816 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "coordinates": [
+        53.210344,
+        45.059872
+      ],
+      "location": "Терновка",
+      "street": "Красная ул, 49",
+      "category": "1-комн. квартира",
+      "isFav": true,
+      "price": "2990000",
+      "priceOld": "3950000",
+      "pricePerMeter": "27374",
+      "totalArea": "25,47",
+      "floor": "8/10",
+      "images": [
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-1.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-2.jpg')}",
+          "alt": "Спальня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-3.jpg')}",
+          "alt": "Кухня"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-4.jpg')}",
+          "alt": "Ванная"
+        },
+        {
+          "src": "${require('./common.blocks/object-item/images/img-5.jpg')}",
+          "alt": "Ванная"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
-import Paginate from 'vuejs-paginate';
+
 import VueLoader from './components/vue-loader.vue';
 import VueSearchForm from './components/vue-search-form.vue';
 import VueSearchFormItems from './components/vue-search-form-items.vue';
@@ -23,7 +23,7 @@ new Vue({
     VueSearchFormItems,
     VueObjectItem,
     VueObjectCardApart,
-    Paginate,
+
     VueCategory,
   },
   data: {
